@@ -42,5 +42,4 @@ Para trocar um placeholder, edite o `.js` da seção e mantenha o `id` (`quiz`, 
 
 ## Observação sobre os dados
 
-Os valores (R$ 52,4 bi arrecadados etc.) vêm do protótipo gerado pela IA do Figma e são fictícios.
-Antes de entregar, substitua por dados reais do BGE, RGF e RREO de Pernambuco em `src/data/dados.js`.
+Os valores (R$ 52,4 bi arrecadados etc.) vêm do design do Figma e são fictícios.
