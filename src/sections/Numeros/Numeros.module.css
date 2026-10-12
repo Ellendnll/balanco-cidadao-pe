@@ -1,0 +1,81 @@
+.section {
+  padding: 5rem 1rem;
+}
+
+.container {
+  composes: container from '../../styles/shared.module.css';
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.banner {
+  composes: borderBold from '../../styles/shared.module.css';
+  margin-top: 2rem;
+  background: var(--color-green);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.bannerLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bannerIcon {
+  font-size: 3rem;
+}
+
+.bannerEyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: #86efac;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.bannerTitle {
+  font-family: var(--font-display);
+  color: #fff;
+  font-size: 1.875rem;
+}
+
+.bannerRight {
+  text-align: center;
+}
+
+.bannerRating {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.125rem;
+}
+
+@media (min-width: 640px) {
+  .section {
+    padding: 5rem 1.5rem;
+  }
+  .grid {
+    gap: 1.5rem;
+  }
+  .banner {
+    flex-direction: row;
+  }
+  .bannerRight {
+    text-align: right;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

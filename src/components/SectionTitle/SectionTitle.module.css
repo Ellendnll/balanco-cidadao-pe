@@ -1,0 +1,38 @@
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.eyebrow {
+  composes: eyebrow from '../../styles/shared.module.css';
+}
+
+.eyebrowDark {
+  color: var(--color-gold);
+}
+
+.title {
+  font-size: 2.25rem;
+  color: var(--color-dark);
+}
+
+.titleDark {
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin: 0.75rem auto 0;
+  max-width: 42rem;
+}
+
+.subtitleDark {
+  color: #9ca3af;
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 3rem;
+  }
+}

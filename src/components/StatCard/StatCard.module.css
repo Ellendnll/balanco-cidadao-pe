@@ -1,0 +1,54 @@
+.card {
+  composes: borderBold cardHover from '../../styles/shared.module.css';
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 6rem;
+  height: 6rem;
+  border-bottom-left-radius: 100%;
+  opacity: 0.1;
+}
+
+.icon {
+  font-size: 1.875rem;
+  margin-bottom: 0.75rem;
+}
+
+.unit {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.value {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #374151;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1rem;
+  }
+  .value {
+    font-size: 1.75rem;
+  }
+}

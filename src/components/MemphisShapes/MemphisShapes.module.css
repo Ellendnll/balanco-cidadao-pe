@@ -1,0 +1,103 @@
+.wrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(5deg);
+  }
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.spinSlow {
+  animation: spinSlow 12s linear infinite;
+}
+
+.circle {
+  position: absolute;
+  top: -4rem;
+  right: -4rem;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: 6px solid var(--color-gold);
+  opacity: 0.4;
+}
+
+.dots {
+  position: absolute;
+  top: 33%;
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  opacity: 0.5;
+}
+
+.dotRow {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background: var(--color-orange);
+}
+
+.zigzag {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 0;
+  opacity: 0.3;
+}
+
+.triangle {
+  position: absolute;
+  top: 5rem;
+  left: 25%;
+  opacity: 0.25;
+}
+
+.square {
+  position: absolute;
+  bottom: 25%;
+  right: 3rem;
+  width: 3rem;
+  height: 3rem;
+  background: var(--color-pink);
+  opacity: 0.3;
+  transform: rotate(12deg);
+  animation-delay: 1s;
+}
+
+.smallCircle {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--color-gold);
+  opacity: 0.5;
+}

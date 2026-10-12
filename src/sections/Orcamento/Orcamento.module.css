@@ -1,0 +1,164 @@
+.section {
+  padding: 5rem 1rem;
+  background: #fff;
+}
+
+.container {
+  composes: container from '../../styles/shared.module.css';
+}
+
+.tabs {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.tab {
+  composes: borderBold from '../../styles/shared.module.css';
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  background: #fff;
+  color: var(--color-dark);
+  transition: background 0.2s, color 0.2s;
+}
+
+.tab:hover {
+  background: #f9fafb;
+}
+
+.tabReceita {
+  background: var(--color-orange);
+  color: #fff;
+}
+
+.tabReceita:hover {
+  background: var(--color-orange);
+}
+
+.tabDespesa {
+  background: var(--color-green);
+  color: #fff;
+}
+
+.tabDespesa:hover {
+  background: var(--color-green);
+}
+
+.receita {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.subtitle {
+  font-size: 1.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.introCentro {
+  text-align: center;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.destaqueLaranja {
+  color: var(--color-orange);
+}
+
+.destaqueVerde {
+  color: var(--color-green);
+}
+
+.barras {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.barraTopo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+.trilho {
+  height: 0.75rem;
+  background: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.preenchimento {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.grafico {
+  height: 20rem;
+}
+
+.graficoBarras {
+  height: 24rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.card {
+  composes: borderBold cardHover from '../../styles/shared.module.css';
+  background: var(--color-cream);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.cardEmoji {
+  font-size: 1.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.cardArea {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+}
+
+.cardValor {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .section {
+    padding: 5rem 1.5rem;
+  }
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .receita {
+    grid-template-columns: 1fr 1fr;
+  }
+}

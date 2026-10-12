@@ -1,0 +1,28 @@
+/* Estilos reutilizados via "composes" nos outros CSS Modules */
+
+.borderBold {
+  border: var(--border-bold);
+}
+
+.cardHover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cardHover:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-pop);
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--color-orange);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5rem;
+}
