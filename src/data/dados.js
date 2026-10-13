@@ -116,6 +116,41 @@ export const quizQuestions = [
     explanation:
       '340 mil famílias no Agreste e Sertão foram beneficiadas com cisternas e adutoras do São Francisco.',
   },
+  {
+    question: 'Quantos estudantes foram beneficiados pelo Pé-de-Meia em Pernambuco até novembro de 2024?',
+    options: ['Cerca de 50 mil', 'Cerca de 120 mil', 'Cerca de 250 mil', 'Cerca de 400 mil'],
+    correct: 2,
+    explanation:
+      'O programa beneficiou 257,2 mil estudantes em Pernambuco.',
+  },
+  {
+    question: 'Quantos estudantes da rede pública foram atendidos pelo Programa Nacional de Alimentação Escolar em Pernambuco entre janeiro e outubro de 2024?',
+    options: ['Cerca de 500 mil', 'Cerca de 900 mil', 'Cerca de 1,5 milhão', 'Cerca de 2,5 milhões'],
+    correct: 2,
+    explanation:
+      'O PNAE atendeu 1,6 milhão de estudantes em aproximadamente 6 mil escolas.',
+  },
+  {
+    question: 'Quantas cirurgias foram realizadas em Pernambuco pelo Programa Nacional de Redução de Filas entre fevereiro e setembro de 2024?',
+    options: ['12,5 mil', '28 mil', '55,2 mil', '80 mil'],
+    correct: 2,
+    explanation:
+      'Foram realizadas 55,2 mil cirurgias no estado no período.',
+  },
+  {
+    question: 'Quantos empreendimentos do Novo PAC haviam sido entregues ou concluídos em Pernambuco até o fim de 2024?',
+    options: ['48', '112', '219', '854'],
+    correct: 2,
+    explanation:
+      'Dos 1.444 empreendimentos listados no Novo PAC para Pernambuco, 219 estavam entregues ou concluídos até o fim de 2024.',
+  },
+  {
+    question: 'Quanto Pernambuco recebeu do Governo Federal em 2024, somando transferências ao Estado, municípios e cidadãos?',
+    options: ['Mais de R$ 20 bilhões', 'Mais de R$ 40 bilhões', 'Mais de R$ 70 bilhões', 'Mais de R$ 100 bilhões'],
+    correct: 2,
+    explanation:
+      'O total superou R$ 72,8 bilhões em transferências federais.',
+  },
 ];
 
 export const timeline = [
