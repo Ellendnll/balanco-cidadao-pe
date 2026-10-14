@@ -29,17 +29,19 @@ Cada componente tem seu `Nome.js` e `Nome.module.css`.
 
 ## Divisão do grupo
 
-| Seção | Pasta | Status |
-|---|---|---|
-| Home (Navbar + Hero) | `components/Navbar`, `sections/Hero` | pronto |
-| Números | `sections/Numeros`, `components/StatCard` | pronto |
-| Orçamento | `sections/Orcamento` | rascunho |
-| Conquistas | `sections/Conquistas` | rascunho |
-| Quiz | `sections/Quiz` | placeholder |
-| Transparência | `sections/Transparencia` | placeholder |
+| Seção | Pasta | Responsável | Status |
+|---|---|---|---|
+| Home (Navbar + Hero) | `components/Navbar`, `sections/Hero` | Ellen | pronto |
+| Números | `sections/Numeros`, `components/StatCard` | Ellen | pronto |
+| Orçamento | `sections/Orcamento` | A definir | rascunho |
+| Conquistas | `sections/Conquistas` | A definir | rascunho |
+| Quiz | `sections/Quiz` | Rogerr | pronto |
+| Transparência | `sections/Transparencia` | Rogerr | pronto |
 
-Para trocar um placeholder, edite o `.js` da seção e mantenha o `id` (`quiz`, `transparencia`), pois o menu usa âncoras.
+Cada seção tem o `id` usado pelo menu como âncora (`orcamento`, `conquistas`, `quiz`, `transparencia`). Ao editar uma seção, mantenha o `id`.
+
+O componente `Placeholder` continua disponível em `components/`, mas nenhuma seção o usa no momento.
 
 ## Observação sobre os dados
 
-Os valores (R$ 52,4 bi arrecadados etc.) vêm do design do Figma e são fictícios.
+Os valores de orçamento (R$ 52,4 bi arrecadados etc.) vêm do design do Figma e são fictícios. Ainda falta trocá-los por dados oficiais do BGE, RGF e RREO de Pernambuco. As perguntas do quiz sobre Pé-de-Meia, PNAE, Programa Nacional de Redução de Filas, Novo PAC e transferências federais devem ter as fontes conferidas antes da entrega.
