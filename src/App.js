@@ -6,6 +6,7 @@ import Orcamento from './sections/Orcamento/Orcamento';
 import Conquistas from './sections/Conquistas/Conquistas';
 import Quiz from './sections/Quiz/Quiz';
 import Transparencia from './sections/Transparencia/Transparencia';
+import SaibaMais from './sections/SaibaMais/SaibaMais';
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Conquistas />
         <Quiz />
         <Transparencia />
+        <SaibaMais />
       </main>
       <Footer />
     </div>

@@ -22,10 +22,16 @@ export default function Footer() {
         </div>
 
         <div className={styles.sources}>
-          {fontesFooter.map((fonte) => (
-            <span key={fonte} className={styles.source}>
-              {fonte}
-            </span>
+         {fontesFooter.map((fonte) => (
+            <a
+              key={fonte.label}
+              href={fonte.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.source}
+            >
+              {fonte.label}
+            </a>
           ))}
         </div>
       </div>

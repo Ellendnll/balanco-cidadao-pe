@@ -1,0 +1,97 @@
+.section {
+  padding: 80px 24px;
+  background: #e84a0e;
+  text-align: center;
+}
+
+.conteudo {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.lupa {
+  display: block;
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.titulo {
+  margin: 0 0 16px;
+  font-family: 'Abril Fatface', serif;
+  font-weight: 400;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  color: #fff;
+}
+
+.texto {
+  margin: 0 auto 32px;
+  max-width: 52ch;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ffe9dd;
+}
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.botao {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 2px solid #1a1a2e;
+  border-radius: 12px;
+  transition: transform 0.15s ease;
+}
+
+.botao:hover {
+  transform: translateY(-3px);
+}
+
+.botao:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+.claro {
+  background: #fff;
+  color: #e84a0e;
+}
+
+.escuro {
+  background: #1a1a2e;
+  color: #fff;
+  border-color: #f59e0b;
+}
+
+.ambar {
+  background: #f59e0b;
+  color: #1a1a2e;
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 56px 20px;
+  }
+
+  .botao {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .botao {
+    transition: none;
+  }
+}

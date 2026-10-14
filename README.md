@@ -22,7 +22,7 @@ src/
 ├── utils/formatters.js     formatBi, formatNumero
 ├── hooks/                  useInView, useCountUp
 ├── components/             Navbar, Footer, StatCard, SectionTitle, MemphisShapes, ChartTooltip, Placeholder
-└── sections/               Hero, Numeros, Orcamento, Conquistas, Quiz, Transparencia
+└── sections/               Hero, Numeros, Orcamento, Conquistas, Quiz, Transparencia, SaibaMais
 ```
 
 Cada componente tem seu `Nome.js` e `Nome.module.css`.
@@ -33,10 +33,12 @@ Cada componente tem seu `Nome.js` e `Nome.module.css`.
 |---|---|---|---|
 | Home (Navbar + Hero) | `components/Navbar`, `sections/Hero` | Ellen | pronto |
 | Números | `sections/Numeros`, `components/StatCard` | Ellen | pronto |
-| Orçamento | `sections/Orcamento` | A definir | rascunho |
-| Conquistas | `sections/Conquistas` | A definir | rascunho |
+| Orçamento | `sections/Orcamento` | Ellen | pronto |
+| Conquistas | `sections/Conquistas` | Ellen | pronto |
 | Quiz | `sections/Quiz` | Rogerr | pronto |
 | Transparência | `sections/Transparencia` | Rogerr | pronto |
+| Saiba mais | `sections/SaibaMais` | Thaiane | pronto |
+
 
 Cada seção tem o `id` usado pelo menu como âncora (`orcamento`, `conquistas`, `quiz`, `transparencia`). Ao editar uma seção, mantenha o `id`.
 

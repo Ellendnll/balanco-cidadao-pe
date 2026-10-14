@@ -22,6 +22,7 @@ export const navLinks = [
   { href: '#conquistas', label: 'Conquistas' },
   { href: '#quiz', label: 'Quiz' },
   { href: '#transparencia', label: 'Transparência' },
+  { href: '#saiba-mais', label: 'Saiba mais',  },
 ];
 
 export const statCards = [
@@ -168,9 +169,14 @@ export const fiscalIndicators = [
 ];
 
 export const saibaMaisLinks = [
-  { label: '📂 Portal da Transparência', variant: 'white' },
-  { label: '📊 RREO e RGF', variant: 'dark' },
-  { label: '📜 LOA 2024', variant: 'gold' },
+  { label: '📂 Portal da Transparência', url: 'https://transparencia.pe.gov.br/', variant: 'white' },
+  { label: '📊 RREO e RGF', url: 'https://transparencia.pe.gov.br/responsabilidade-fiscal/relatorios-fiscais/', variant: 'dark' },
+  { label: '📜 LOA 2024', url: 'https://transparencia.pe.gov.br/responsabilidade-fiscal/planejamento-e-orcamento/lei-orcamentaria-anual-loa/', variant: 'gold' },
 ];
 
-export const fontesFooter = ['📊 Receita Federal', '🏛️ TCE-PE', '📋 STN', '🔍 CGE-PE'];
+export const fontesFooter = [
+  { label: '📊 Receita Federal', url: 'https://www.gov.br/receitafederal/pt-br' },
+  { label: '🏛️ TCE-PE', url: 'https://www.tcepe.tc.br/' },
+  { label: '📋 STN', url: 'https://www.tesourotransparente.gov.br/' },
+  { label: '🔍 CGE-PE', url: 'https://www.scge.pe.gov.br/' },
+];
